@@ -1,0 +1,56 @@
+.home{
+     padding:0;
+     position: relative;
+          .slide{
+               display: flex;
+               min-height: 60vh;
+               padding:2rem 7%;
+               background-size: cover !important;
+               background-position: center !important;
+               align-items: center;
+               display: none;
+                    &.active{
+                         display: flex;
+                    }
+                    .content{
+                         span{
+                              color:$black;
+                              display: block;
+                              font-size:2rem;
+                              animation: fadeIn .4s linear .2s backwards;
+                         }
+                         h3{
+                              color:$black;
+                              text-transform: uppercase;
+                              padding: 1rem 0;
+                              font-size:6rem;
+                              animation: fadeIn .4s linear .4s backwards;
+                         }
+                         .btn{
+                              animation: fadeIn .4s linear .6s backwards;
+                         }
+                    }
+          }
+          #next-slide,
+          #prev-slide{
+               position: absolute;
+               bottom: 2rem; right: 2rem;
+               height: 6rem;
+               width:6rem;
+               line-height: 5.5rem;
+               font-size: 4rem;
+               color:$black;
+               border:$border;
+               background: $white;
+               border-radius: .5rem;
+               cursor: pointer;
+               text-align: center;
+                    &:hover{
+                         background: $black;
+                         color:$white;
+                    }
+          }
+          #prev-slide{
+               right: 9rem;
+          }
+}
